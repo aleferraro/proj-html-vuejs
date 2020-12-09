@@ -24,4 +24,73 @@
 }
 
 
+/* Usable Properties */
+
+.jungleGreen {
+  color: #22AD96;
+}
+
+.btn-primary {
+  background-color: #22AD96;
+  border: 1px solid #22AD96;
+}
+
+.btn-primary:hover {
+  background-color: #513E5E;
+  border: 1px solid #513E5E;
+}
+
 /* Layout properites */
+
+body {
+  color: #513E5E;
+}
+
+header {
+  background-image: url('../img/jumbo-overlay.svg');
+  background-color: #E9E6E3;
+}
+
+nav .row {
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+nav .logo {
+  font-size: 30px;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.menu > ul > li {
+  list-style: none;
+  padding: 0 5px;
+}
+
+.menu a {
+  color: inherit;
+}
+
+.menu > * {
+  margin: 0 5px;
+}
+
+.jumbotron {
+  background-color: inherit;
+}
+
+.jumbotron .col-7 {
+  text-align: center;
+}

@@ -23,15 +23,51 @@
     <link rel="stylesheet" href="css/style.css">
 
   </head>
-  <body class="debug">
+  <body class="">
     <div id="root">
       <header class="container-fluid">
         <div class="container">
           <nav>
-
+            <div class="row">
+              <div class="col-2 logo">
+                <strong>Max</strong>Coach
+              </div>
+              <div class="col-10 menu">
+                <ul>
+                  <li v-for="item in navMenu">
+                    <a href="#">
+                      {{ item }}
+                      <i class="fas fa-chevron-down"></i>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="#">
+                  <i class="far fa-user-circle"></i>
+                </a>
+                <div class="searchbar">
+                  <input type="text" placeholder="Search...">
+                  <i class="jungleGreen fas fa-search"></i>
+                </div>
+              </div>
+            </div>
           </nav>
           <div class="jumbotron">
-
+            <div class="row">
+              <div class="col-5">
+                <h1>Complete Your Dreams in JavaS Programming</h1>
+                <p>Learn any coding program in distance and for a reasonable fee. You don't have to struggle alone, you've got our assistance and help.</p>
+                <button type="button" class="btn btn-primary">
+                  <i class="fas fa-download"></i>
+                  Download free E-book
+                </button>
+              </div>
+              <div class="col-7">
+                <img src="img/home-5-hero-image-279x300.png" alt="coding">
+              </div>
+            </div>
           </div>
         </div>
       </header>
