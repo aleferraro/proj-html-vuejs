@@ -40,11 +40,22 @@
   border: 1px solid #513E5E;
 }
 
+.cardContainer {
+  padding: 20px 0;
+  display: flex;
+}
+
 /* Layout properites */
 
 body {
   color: #513E5E;
 }
+
+a {
+  color: inherit;
+}
+
+/* header */
 
 header {
   background-image: url('../img/jumbo-overlay.svg');
@@ -57,8 +68,8 @@ nav .row {
   align-items: center;
 }
 
-nav .logo {
-  font-size: 30px;
+nav .logo > img {
+  width: 200px;
 }
 
 nav .menu {
@@ -79,18 +90,51 @@ nav .menu {
   padding: 0 5px;
 }
 
-.menu a {
-  color: inherit;
-}
-
 .menu > * {
-  margin: 0 5px;
+  margin: 0 20px;
 }
 
 .jumbotron {
   background-color: inherit;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.jumbotron .col-7 {
-  text-align: center;
+.jumbotron .row {
+  display: flex;
+  align-items: center;
 }
+
+.jumbotron .col-8 {
+  text-align: right;
+}
+
+/* section 1 */
+
+#section1 .row {
+  margin-bottom: 30px;
+}
+
+.cardContainer .card {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  margin: 20px 0;
+}
+
+.card h4 {
+  margin: 15px 0;
+}
+
+.card p {
+  margin-bottom: 25px;
+}
+
+/* section 2 */

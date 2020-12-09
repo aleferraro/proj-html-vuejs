@@ -30,7 +30,7 @@
           <nav>
             <div class="row">
               <div class="col-2 logo">
-                <strong>Max</strong>Coach
+                <img src="img/dark-logo.png" alt="logo">
               </div>
               <div class="col-10 menu">
                 <ul>
@@ -56,7 +56,7 @@
           </nav>
           <div class="jumbotron">
             <div class="row">
-              <div class="col-5">
+              <div class="col-4">
                 <h1>Complete Your Dreams in JavaS Programming</h1>
                 <p>Learn any coding program in distance and for a reasonable fee. You don't have to struggle alone, you've got our assistance and help.</p>
                 <button type="button" class="btn btn-primary">
@@ -64,8 +64,8 @@
                   Download free E-book
                 </button>
               </div>
-              <div class="col-7">
-                <img src="img/home-5-hero-image-279x300.png" alt="coding">
+              <div class="col-8">
+                <img src="img/home-5-hero-image.png" alt="coding">
               </div>
             </div>
           </div>
@@ -75,67 +75,60 @@
         <div id="section1" class="container-fluid">
           <div class="container">
             <div class="row">
-              <div class="col">
-
+              <div class="col text-center">
+                <h6 class="text-uppercase">start learning coding languages</h6>
+                <h1 class="text-capitalize">build your Dream <span class="jungleGreen text-uppercase">today</span></h1>
               </div>
             </div>
-            <div class="row">
-              <div class="col-3"></div>
-              <div class="col-3"></div>
-              <div class="col-3"></div>
-              <div class="col-3"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col">
-
-              </div>
-              <div class="col">
-
+            <div class="cardContainer">
+              <div v-for="card in sectionOneCards" class="text-center card">
+                <img :src="card.imgUrl" :alt="'image for' + title">
+                <h4 class="text-capitalize">{{ card.title }}</h4>
+                <p>{{ card.text }}</p>
+                <a href="#">Start now <i class="fas fa-long-arrow-alt-right"></i></a>
               </div>
             </div>
           </div>
         </div>
-        <div id="section2" class="container-fluid">
+        <div id="section2">
           <div class="container">
             <div class="row">
-              <div class="col-3"></div>
-              <div class="col-3"></div>
-              <div class="col-3"></div>
-              <div class="col-3"></div>
+              <div class="col">
+              </div>
+              <div class="col">
+
+              </div>
             </div>
           </div>
         </div>
         <div id="section3" class="container-fluid">
           <div class="container">
             <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4"></div>
-              <div class="col-4"></div>
-            </div>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4"></div>
-              <div class="col-4"></div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
+              <div class="col-3"></div>
             </div>
           </div>
         </div>
         <div id="section4" class="container-fluid">
           <div class="container">
             <div class="row">
-              <div class="col"></div>
-              <div class="col"></div>
+              <div class="col-4"></div>
+              <div class="col-4"></div>
+              <div class="col-4"></div>
             </div>
             <div class="row">
-              <div class="col"></div>
-              <div class="col"></div>
+              <div class="col-4"></div>
+              <div class="col-4"></div>
+              <div class="col-4"></div>
             </div>
           </div>
         </div>
         <div id="section5" class="container-fluid">
           <div class="container">
             <div class="row">
+              <div class="col"></div>
               <div class="col"></div>
             </div>
             <div class="row">
@@ -145,6 +138,17 @@
           </div>
         </div>
         <div id="section6" class="container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col"></div>
+            </div>
+            <div class="row">
+              <div class="col"></div>
+              <div class="col"></div>
+            </div>
+          </div>
+        </div>
+        <div id="section7" class="container-fluid">
           <div class="container">
             <div class="row">
               <div class="col"></div>
