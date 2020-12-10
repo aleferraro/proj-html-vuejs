@@ -34,6 +34,10 @@
   color: #FFF;
 }
 
+.btn {
+  padding: 10px 25px;
+}
+
 .btn-primary {
   background-color: #22AD96;
   border: 1px solid #22AD96;
@@ -278,4 +282,68 @@ margin-bottom: 50px;
 #section4 button {
   padding-left: 30px;
   padding-right: 30px;
+}
+
+/* section 5 */
+
+#section5 .col-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#section5 ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#section5 ul > li > i {
+  margin-right: 10px;
+}
+
+#section5 .col-7 {
+  background-image: url('../img/underlay-shape-grey.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 70%;
+  position: relative;
+}
+
+#section5 .col-7 img:first-child {
+  margin-bottom: 70px;
+}
+
+#section5 .col-7 img:last-child {
+  position: absolute;
+  right: 0;
+  bottom: 20%;
+}
+
+/* section 6 */
+
+#section6 .col-7 {
+  background-image: url('../img/underlay-shape-grey.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 70%;
+  position: relative;
+  padding-right: 30px;
+}
+
+#section6 .col-7 img:first-child {
+  margin-bottom: 40px;
+  z-index: 1;
+}
+
+#section6 .col-7 img.shape:nth-child(2) {
+  position: absolute;
+  left: -80px;
+  bottom: 50%;
+}
+
+#section6 .col-7 img.shape:last-child {
+  position: absolute;
+  right: 45px;
+  bottom: 20%;
+  z-index: -1;
 }

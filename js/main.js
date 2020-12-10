@@ -105,8 +105,8 @@ const myApp = new Vue({
     ]
   },
   methods: {
-    openBox(e){
-
-    }
+    // openBox(e){
+    //
+    // }
   }
 })
