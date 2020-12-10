@@ -40,6 +40,18 @@
   border: 1px solid #513E5E;
 }
 
+.btn-secondary {
+  background-color: #FFF;
+  border: 1px solid #FFF;
+  color: #513E5E;
+}
+
+.btn-secondary:hover {
+  background-color: #F0EFEF;
+  border: 1px solid #F0EFEF;
+  color: #22AD96;
+}
+
 .cardContainer {
   padding: 20px 0;
   display: flex;
@@ -55,11 +67,15 @@ a {
   color: inherit;
 }
 
+[id*="section"] {
+  padding: 40px 0;
+}
+
 /* header */
 
 header {
   background-image: url('../img/jumbo-overlay.svg');
-  background-color: #E9E6E3;
+  background-color: #F0EFEF;
 }
 
 nav .row {
@@ -138,3 +154,56 @@ nav .menu {
 }
 
 /* section 2 */
+
+#section2 .col:first-child {
+  background-image: url('../img/underlay-shape-lilla.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 60%;
+}
+
+#section2 .box {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 15px 15px 15px #F3F3F3;
+  margin-bottom: 30px;
+}
+
+#section2 .title {
+  background-color: #22AD96;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#section2 .title img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #959999;
+}
+
+#section2 .title img:hover {
+  cursor: pointer;
+}
+
+#section2 .title h6 {
+  margin-bottom: 0;
+}
+
+#section2 .box > p {
+  padding: 15px 10px;
+  display: none;
+}
+
+/* section 3 */
+
+#section3 {
+  background-color: #F0EFEF;
+}
+
+#section3 .number {
+  font-size: 25px;
+  font-weight: bold;
+}

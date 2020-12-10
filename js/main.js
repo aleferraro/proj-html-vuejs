@@ -32,9 +32,25 @@ const myApp = new Vue({
         title: 'graphic design',
         text: 'Have a passion for graphics and arts? Show your tam+lents with confidence and self-assertiveness.'
       }
+    ],
+    sectionTwoCards: [
+      {
+        title: 'Multiple Platforms Supported for Teaching & Studying',
+        text: 'MaxCoach supports the act of taching and learning on multiple platforms like online or offline via material downloads. We know things aren\'t supposed to be devoured in a short time, you can always access our knowledge base from any device.'
+      },
+      {
+        title: 'Multiple Course Participation at the Same Time',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        title: 'Track Study Progress & Deliver Prompt Feedback',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      }
     ]
   },
   methods: {
+    openBox(e){
 
+    }
   }
 })

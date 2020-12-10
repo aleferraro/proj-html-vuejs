@@ -82,21 +82,30 @@
             </div>
             <div class="cardContainer">
               <div v-for="card in sectionOneCards" class="text-center card">
-                <img :src="card.imgUrl" :alt="'image for' + title">
+                <img :src="card.imgUrl" :alt="'image for' + card.title">
                 <h4 class="text-capitalize">{{ card.title }}</h4>
                 <p>{{ card.text }}</p>
-                <a href="#">Start now <i class="fas fa-long-arrow-alt-right"></i></a>
+                <button type="button" class="btn btn-secondary">Start now <i class="fas fa-long-arrow-alt-right"></i></button>
               </div>
             </div>
           </div>
         </div>
-        <div id="section2">
+        <div id="section2" class="container-fluid">
           <div class="container">
             <div class="row">
-              <div class="col">
+              <div class="col text-center">
+                <img src="img/about-us-03-image-01.png" alt="image for about us">
               </div>
               <div class="col">
-
+                <h6 class="text-uppercase">dream with <strong>maxcoach</strong></h6>
+                <h1 class="text-capitalize">construct a <span class="jungleGreen">stunning</span> career perspective</h1>
+                <div v-for="item in sectionTwoCards" class="box">
+                  <div class="title">
+                    <h6>{{ item.title }}</h6>
+                    <img src="img/add.svg" alt="show more">
+                  </div>
+                  <p>{{ item.text }}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -104,10 +113,26 @@
         <div id="section3" class="container-fluid">
           <div class="container">
             <div class="row">
-              <div class="col-3"></div>
-              <div class="col-3"></div>
-              <div class="col-3"></div>
-              <div class="col-3"></div>
+              <div class="col text-center">
+                <span class="jungleGreen number">1926</span>
+                <br>
+                <span class="text-uppercase">finished sessions</span>
+              </div>
+              <div class="col text-center">
+                <span class="jungleGreen number">3092+</span>
+                <br>
+                <span class="text-uppercase">enrolled learners</span>
+              </div>
+              <div class="col text-center">
+                <span class="jungleGreen number">200</span>
+                <br>
+                <span class="text-uppercase">online instructors</span>
+              </div>
+              <div class="col text-center">
+                <span class="jungleGreen number">100%</span>
+                <br>
+                <span class="text-uppercase">satisfaction rate</span>
+              </div>
             </div>
           </div>
         </div>
