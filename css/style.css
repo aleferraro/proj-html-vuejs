@@ -30,6 +30,10 @@
   color: #22AD96;
 }
 
+.white {
+  color: #FFF;
+}
+
 .btn-primary {
   background-color: #22AD96;
   border: 1px solid #22AD96;
@@ -165,7 +169,7 @@ nav .menu {
 #section2 .box {
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 15px 15px 15px #F3F3F3;
+  box-shadow: 15px 15px 15px #F0EFEF;
   margin-bottom: 30px;
 }
 
@@ -206,4 +210,72 @@ nav .menu {
 #section3 .number {
   font-size: 25px;
   font-weight: bold;
+}
+
+/* section 4 */
+
+#section4 {
+  background-image: linear-gradient(#FFF, #F6F6F6);
+}
+
+#section4 h1 {
+margin-bottom: 50px;
+}
+
+#section4 .course {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  margin: 30px 15px;
+}
+
+#section4 .course:hover {
+  background-color: #FFF;
+  box-shadow: 15px 15px 15px #F0EFEF;
+}
+
+#section4 .course .courseImg {
+  width: 100%;
+}
+
+#section4 .course .courseDescription {
+  padding: 10px 25px;
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#section4 .course .courseDescription .teacher > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#section4 .course .courseTop .price {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #22AD96;
+  border-bottom-left-radius: 10px;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+
+#section4 .course .courseDescription > h4 {
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+#section4 .course .courseDescription span:first-child {
+  margin-right: 25px;
+}
+
+#section4 button {
+  padding-left: 30px;
+  padding-right: 30px;
 }

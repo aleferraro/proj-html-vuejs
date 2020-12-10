@@ -137,17 +137,40 @@
           </div>
         </div>
         <div id="section4" class="container-fluid">
-          <div class="container">
+          <div class="container text-center">
+            <h6 class="text-uppercase">chose where you'd like to begin</h6>
+            <h1 class="text-capitalize">latest featured <span class="jungleGreen">courses</span></h1>
             <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4"></div>
-              <div class="col-4"></div>
+              <div v-for="course in courses" class="col course text-left">
+                <div class="courseTop">
+                  <img class="courseImg" :src="course.imgUrl" :alt="course.courseTitle">
+                  <div class="price white">{{ course.price }}</div>
+                </div>
+                <div class="courseDescription">
+                  <div class="teacher">
+                    <img :src="course.teacherImgUrl" :alt="course.teacher">
+                    <span>{{ course.teacher }}</span>
+                  </div>
+                  <h4>{{ course.courseTitle }}</h4>
+                  <div class="course-bottom">
+                    <span>
+                      <i class="far fa-file-alt"></i>
+                      {{ course.lessonsNumber }}
+                      Lessons
+                    </span>
+                    <span>
+                      <i class="far fa-file-alt"></i>
+                      {{ course.studentsNumber }}
+                      Students
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4"></div>
-              <div class="col-4"></div>
-            </div>
+            <button type="button" class="btn btn-primary">
+              View all courses
+              <i class="fas fa-long-arrow-alt-right"></i>
+            </button>
           </div>
         </div>
         <div id="section5" class="container-fluid">

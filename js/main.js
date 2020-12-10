@@ -46,6 +46,62 @@ const myApp = new Vue({
         title: 'Track Study Progress & Deliver Prompt Feedback',
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       }
+    ],
+    courses: [
+      {
+        imgUrl: 'img/course-02-480x298.jpg',
+        price: '$40.00',
+        teacher: 'Blanche Fields',
+        teacherImgUrl: 'img/73ee246daf47502812ccefc84bf02898.jpeg',
+        courseTitle: 'Learning to Write as a Professional Author',
+        lessonsNumber: 20,
+        studentsNumber: 50
+      },
+      {
+        imgUrl: 'img/stock-full-hd-03-480x298.jpg',
+        price: 'Free',
+        teacher: 'Maggie Strickland',
+        teacherImgUrl: 'img/d0d504142acfde820eef2f11feea6253.jpeg',
+        courseTitle: 'Customer-centric Info-Tech Strategies',
+        lessonsNumber: 24,
+        studentsNumber: 769
+      },
+      {
+        imgUrl: 'img/stock-full-hd-04-480x298.jpg',
+        price: '$19.00',
+        teacher: 'Maggie Strickland',
+        teacherImgUrl: 'img/d0d504142acfde820eef2f11feea6253.jpeg',
+        courseTitle: 'Open Programming Courses for Everyone: Python',
+        lessonsNumber: 71,
+        studentsNumber: 62
+      },
+      {
+        imgUrl: 'img/stock-full-hd-06-480x298.jpg',
+        price: '$26.00',
+        teacher: 'Blanche Fields',
+        teacherImgUrl: 'img/73ee246daf47502812ccefc84bf02898.jpeg',
+        courseTitle: 'Academic Listening and Note-taking',
+        lessonsNumber: 14,
+        studentsNumber: 67
+      },
+      {
+        imgUrl: 'img/course-featured-image-01-480x298.jpg',
+        price: '$39.00',
+        teacher: 'Blanche Fields',
+        teacherImgUrl: 'img/73ee246daf47502812ccefc84bf02898.jpeg',
+        courseTitle: 'Master jQuery in a Short Period of Time',
+        lessonsNumber: 6,
+        studentsNumber: 51
+      },
+      {
+        imgUrl: 'img/stock-full-hd-05-480x298.jpg',
+        price: '$59.00',
+        teacher: 'Blanche Fields',
+        teacherImgUrl: 'img/73ee246daf47502812ccefc84bf02898.jpeg',
+        courseTitle: 'Introduction to Javascript for Beginners',
+        lessonsNumber: 14,
+        studentsNumber: 76
+      }
     ]
   },
   methods: {
