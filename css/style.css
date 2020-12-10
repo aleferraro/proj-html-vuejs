@@ -347,3 +347,51 @@ margin-bottom: 50px;
   bottom: 20%;
   z-index: -1;
 }
+
+/* section 7 */
+
+#section7 .event {
+  flex-basis: 45%;
+  margin: 15px 15px;
+  padding: 20px;
+  background-color: #F0EFEF;
+  border-radius: 5px;
+}
+
+#section7 .event:hover {
+  background-color: #FFF;
+  box-shadow: 15px 15px 15px #F0EFEF;
+  border-left: 5px solid #22AD96;
+}
+
+#section7 .event:hover .btn-primary {
+  background-color: #513E5E;
+  border: 1px solid #513E5E;
+}
+
+#section7 .event:hover .row {
+}
+
+#section7 .eventName {
+  margin-top: 10px;
+}
+
+#section7 .event-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#section7 .eventDay {
+  font-size: 3rem;
+}
+
+#section7 .eventMonth {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#section7 a {
+  font-weight: bold;
+  border-bottom: 1px solid #F0EFEF;
+}

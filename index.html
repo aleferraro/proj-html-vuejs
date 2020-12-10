@@ -210,7 +210,7 @@
             </div>
           </div>
         </div>
-        <div id="section6">
+        <div id="section6" class="container-fluid">
           <div class="container">
             <div class="row">
               <div class="col-7 text-center">
@@ -220,7 +220,7 @@
               </div>
               <div class="col-5">
                 <h6 class="text-uppercase">what are you looking for?</h6>
-                <h1 class="text-capitalize">learn on your <span class="jungleGreen">mobile</span> anytime!</h1>
+                <h1>Learn on your <span class="jungleGreen">mobile</span> anytime!</h1>
                 <p>Save lessons for later and revise or write notes at any time and on multiple devices on your way. Never interfere with activities of enjoyment or other precious moments.</p>
                 <div>
                   <button type="button" class="btn btn-primary">
@@ -233,12 +233,35 @@
         </div>
         <div id="section7" class="container-fluid">
           <div class="container">
-            <div class="row">
-              <div class="col"></div>
+            <div class="text-center">
+              <h6 class="text-uppercase">get in contact now</h6>
+              <h1 class="text-capitalize">upcoming <span class="jungleGreen">events</span></h1>
             </div>
             <div class="row">
-              <div class="col"></div>
-              <div class="col"></div>
+              <div v-for="event in upcomingEvents" class="col event">
+                <div class="row">
+                  <div class="col-8 event-left">
+                    <span>
+                      <i class="fas fa-map-marker-alt"></i>
+                      {{ event.position }}
+                    </span>
+                    <h4 class="eventName">{{ event.eventName }}</h4>
+                  </div>
+                  <div class="col-4 text-center event-right">
+                    <span class="jungleGreen eventDay">{{ event.eventDay }}</span>
+                    <span class="text-uppercase eventMonth">{{ event.eventMonth }}</span>
+                    <button type="button" class="btn btn-primary">
+                      Get ticket
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <p>
+                Excited about our event?
+                <a href="#" class="jungleGreen">View all events <i class="fas fa-long-arrow-alt-right"></i></a>
+              </p>
             </div>
           </div>
         </div>

@@ -102,6 +102,44 @@ const myApp = new Vue({
         lessonsNumber: 14,
         studentsNumber: 76
       }
+    ],
+    upcomingEvents: [
+      {
+        position: 'Texas, US',
+        eventName: 'Storytelling Workshop',
+        eventDay: '22',
+        eventMonth: 'nov'
+      },
+      {
+        position: 'New York, US',
+        eventName: 'Painting Art Contest 2020',
+        eventDay: '10',
+        eventMonth: 'oct'
+      },
+      {
+        position: 'Hamburg, Germany',
+        eventName: 'International Art Fair 2020',
+        eventDay: '23',
+        eventMonth: 'nov'
+      },
+      {
+        position: 'Illinois, US',
+        eventName: 'Street Performance: Call for Artist',
+        eventDay: '15',
+        eventMonth: 'dec'
+      },
+      {
+        position: 'Illinois, US',
+        eventName: 'Consumer Food Safety Education Conference',
+        eventDay: '22',
+        eventMonth: 'jul'
+      },
+      {
+        position: 'Dubai',
+        eventName: 'How meditation improve your mental health?',
+        eventDay: '12',
+        eventMonth: 'aug'
+      }
     ]
   },
   methods: {
