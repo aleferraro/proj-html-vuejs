@@ -333,6 +333,10 @@ nav .menu .searchbar input {
 
 #section4 {
   background-image: linear-gradient(#FFF, #F6F6F6);
+  /* border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%; */
+  clip-path: ellipse(140% 100% at 50% 0%);
+  padding-bottom: 70px;
 }
 
 #section4 h1 {
@@ -475,6 +479,19 @@ margin-bottom: 50px;
 
 /* section 7 */
 
+#section7 {
+  background-color: #F0EFEF;
+  padding: 0;
+}
+
+#section7 .white-bg {
+  background-color: #FFF;
+  height: 100%;
+  padding-top: 40px;
+  padding-bottom: 170px;
+  clip-path: ellipse(100% 92% at 22% 12%);
+}
+
 #section7 .event {
   flex-basis: 45%;
   margin: 15px;
@@ -493,9 +510,6 @@ margin-bottom: 50px;
 #section7 .event:hover .btn-primary {
   background-color: #513E5E;
   border: 1px solid #513E5E;
-}
-
-#section7 .event:hover .row {
 }
 
 #section7 .eventName {
@@ -536,6 +550,7 @@ margin-bottom: 50px;
 
 #section8 {
   background-color: #F0EFEF;
+  padding-top: 100px;
 }
 
 #section8 .testimonial {
