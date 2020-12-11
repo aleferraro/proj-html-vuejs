@@ -15,12 +15,12 @@ const myApp = new Vue({
       {
         imgUrl: 'img/home-5-image-box-01.png',
         title: 'idea discussion',
-        text: 'Get teamed up with the specialists who work and teach codng for years at famous universities.'
+        text: 'Get teamed up with the specialists who work and teach coding for years at famous universities.'
       },
       {
         imgUrl: 'img/home-5-image-box-02.png',
         title: 'web development',
-        text: 'Learn to start building a webpage from scratch. You decide ypur own pace, course and speed.'
+        text: 'Learn to start building a webpage from scratch. You decide your own pace, course and speed.'
       },
       {
         imgUrl: 'img/home-5-image-box-03.png',
@@ -30,7 +30,7 @@ const myApp = new Vue({
       {
         imgUrl: 'img/home-5-image-box-04.png',
         title: 'graphic design',
-        text: 'Have a passion for graphics and arts? Show your tam+lents with confidence and self-assertiveness.'
+        text: 'Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.'
       }
     ],
     sectionTwoCards: [
@@ -140,11 +140,56 @@ const myApp = new Vue({
         eventDay: '12',
         eventMonth: 'aug'
       }
+    ],
+    testimonials: [
+      {
+        avatar: 'img/testimonial-avata-02.jpg',
+        text: 'I am free to lear at my own pace, follow my own schedule and choose the subject I like. Great study portal for people like me.',
+        name: 'Mina Hollace',
+        profession: 'Freelancer'
+      },
+      {
+        avatar: 'img/testimonial-avata-04.jpg',
+        text: 'MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.',
+        name: 'Madley Pondor',
+        profession: 'IT Specialist'
+      },
+      {
+        avatar: 'img/testimonial-avata-01.jpg',
+        text: 'I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.',
+        name: 'Luvic Dubble',
+        profession: 'Private Tutor'
+      }
+    ],
+    footerMenu: [
+      {
+        title: 'Explore',
+        list: [
+          'Start here',
+          'Blog',
+          'About us'
+        ]
+      },
+      {
+        title: '',
+        list: [
+          'Success story',
+          'Courses',
+          'Contact us'
+        ]
+      },
+      {
+        title: 'Information',
+        list: [
+          'Membership',
+          'Purchase guide',
+          'Privacy policy',
+          'Terms of services'
+        ]
+      }
     ]
   },
   methods: {
-    // openBox(e){
-    //
-    // }
+
   }
 })

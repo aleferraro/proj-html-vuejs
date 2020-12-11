@@ -4,6 +4,11 @@
     <meta charset="utf-8">
     <title>Modern Schooling</title>
 
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Frameworks CSS -->
 
     <!-- Font Awesome 5.15.1 (CDN) -->
@@ -27,7 +32,7 @@
     <div id="root">
       <header class="container-fluid">
         <div class="container">
-          <nav>
+          <nav class="mulledWine">
             <div class="row">
               <div class="col-2 logo">
                 <img src="img/dark-logo.png" alt="logo">
@@ -83,7 +88,7 @@
             <div class="cardContainer">
               <div v-for="card in sectionOneCards" class="text-center card">
                 <img :src="card.imgUrl" :alt="'image for' + card.title">
-                <h4 class="text-capitalize">{{ card.title }}</h4>
+                <h4 class="text-capitalize mulledWine">{{ card.title }}</h4>
                 <p>{{ card.text }}</p>
                 <button type="button" class="btn btn-secondary">Start now <i class="fas fa-long-arrow-alt-right"></i></button>
               </div>
@@ -97,10 +102,13 @@
                 <img src="img/about-us-03-image-01.png" alt="image for about us">
               </div>
               <div class="col">
-                <h6 class="text-uppercase">dream with <strong>maxcoach</strong></h6>
+                <h6 class="text-uppercase">
+                  dream with
+                  <span class="mulledWine"><strong>maxcoach</strong></span>
+                </h6>
                 <h1 class="text-capitalize">construct a <span class="jungleGreen">stunning</span> career perspective</h1>
                 <div v-for="item in sectionTwoCards" class="box">
-                  <div class="title">
+                  <div class="title mulledWine">
                     <h6>{{ item.title }}</h6>
                     <img src="img/add.svg" alt="show more">
                   </div>
@@ -116,22 +124,22 @@
               <div class="col text-center">
                 <span class="jungleGreen number">1926</span>
                 <br>
-                <span class="text-uppercase">finished sessions</span>
+                <span class="mulledWine text-uppercase">finished sessions</span>
               </div>
               <div class="col text-center">
                 <span class="jungleGreen number">3092+</span>
                 <br>
-                <span class="text-uppercase">enrolled learners</span>
+                <span class="mulledWine text-uppercase">enrolled learners</span>
               </div>
               <div class="col text-center">
                 <span class="jungleGreen number">200</span>
                 <br>
-                <span class="text-uppercase">online instructors</span>
+                <span class="mulledWine text-uppercase">online instructors</span>
               </div>
               <div class="col text-center">
                 <span class="jungleGreen number">100%</span>
                 <br>
-                <span class="text-uppercase">satisfaction rate</span>
+                <span class="mulledWine text-uppercase">satisfaction rate</span>
               </div>
             </div>
           </div>
@@ -151,7 +159,7 @@
                     <img :src="course.teacherImgUrl" :alt="course.teacher">
                     <span>{{ course.teacher }}</span>
                   </div>
-                  <h4>{{ course.courseTitle }}</h4>
+                  <h4 class="mulledWine">{{ course.courseTitle }}</h4>
                   <div class="course-bottom">
                     <span>
                       <i class="far fa-file-alt"></i>
@@ -215,8 +223,9 @@
             <div class="row">
               <div class="col-7 text-center">
                 <img src="img/home-5-image-02.png" alt="learn on mobile">
-                <img class="shape" src="img/maxcoach-shape-01.png" alt="shape">
-                <img class="shape" src="img/maxcoach-shape-07.png" alt="shape">
+                <img src="img/maxcoach-shape-01.png" alt="shape">
+                <img src="img/maxcoach-shape-07.png" alt="shape">
+                <div class="shape"></div>
               </div>
               <div class="col-5">
                 <h6 class="text-uppercase">what are you looking for?</h6>
@@ -245,11 +254,11 @@
                       <i class="fas fa-map-marker-alt"></i>
                       {{ event.position }}
                     </span>
-                    <h4 class="eventName">{{ event.eventName }}</h4>
+                    <h4 class="eventName mulledWine">{{ event.eventName }}</h4>
                   </div>
                   <div class="col-4 text-center event-right">
                     <span class="jungleGreen eventDay">{{ event.eventDay }}</span>
-                    <span class="text-uppercase eventMonth">{{ event.eventMonth }}</span>
+                    <span class="text-uppercase eventMonth mulledWine">{{ event.eventMonth }}</span>
                     <button type="button" class="btn btn-primary">
                       Get ticket
                     </button>
@@ -267,16 +276,33 @@
         </div>
         <div id="section8" class="container-fluid">
           <div class="container">
-            <div class="row">
-              <div class="col"></div>
+            <div class="text-center">
+              <h6 class="text-uppercase">people are praising maxcoach</h6>
+              <h1>What make they <span class="jungleGreen">love us?</span></h1>
             </div>
             <div class="row">
-              <div class="col"></div>
-              <div class="col"></div>
-              <div class="col"></div>
+              <div v-for="testimonial in testimonials" class="col testimonial text-center">
+                <img :src="testimonial.avatar" :alt="testimonial.name">
+                <p class="mulledWine">{{ testimonial.text }}</p>
+                <h6 class="text-uppercase mulledWine">{{ testimonial.name }}</h6>
+                <span>/ {{ testimonial.profession }}</span>
+              </div>
             </div>
-            <div class="row">
-              <div class="col"></div>
+            <div class="text-center slider-count">
+              <i class="fas fa-circle active"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+            </div>
+            <div class="text-center bottom-section">
+              <h5 class="mulledWine">Start today for getting <span class="jungleGreen">Online Certification</span></h5>
+              <h3 class="mulledWine">You can be your own guiding star with our help!</h3>
+              <button type="button" class="btn btn-primary">
+                Get started now
+              </button>
+              <img src="img/maxcoach-shape-01.png" alt="shape">
+              <img src="img/maxcoach-shape-02.png" alt="shape">
+              <div class="shape"></div>
             </div>
           </div>
         </div>
@@ -284,16 +310,30 @@
       <footer class="container-fluid">
         <div class="container">
           <div class="row">
-            <div class="col"></div>
+            <div class="col left-footer">
+              <div class="mulledWine"><strong>Address</strong></div>
+              <div>382 NE 191st # 87394 Miami, FL 33179-3899</div>
+              <div>+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)</div>
+              <a href="#">support@maxcoach.com</a>
+              <div class="social">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </div>
             <div class="col">
               <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-                <div class="col"></div>
+                <div v-for="menu in footerMenu" class="col">
+                  <div class="mulledWine menu-title">{{ menu.title }}</div>
+                  <ul>
+                    <li v-for="item in menu.list"><a href="#">{{ item }}</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-          <div class="row"></div>
+          <div class="text-center copy">&copy; 2020 Maxcoach. All Rights Reserved</div>
         </div>
       </footer>
     </div>
