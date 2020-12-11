@@ -47,6 +47,7 @@
 }
 
 .btn-primary {
+  margin: 1rem 0;
   background-color: #22AD96;
   border: 1px solid #22AD96;
 }
@@ -57,6 +58,7 @@
 }
 
 .btn-secondary {
+  margin: 1rem 0;
   background-color: #FFF;
   border: 1px solid #FFF;
   color: #96A6A5;
@@ -87,12 +89,45 @@ body {
   font-family: 'Sen', sans-serif;
 }
 
+.toTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  color: #FFF;
+  background-color: #22AD96;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.toTop:hover {
+  cursor: pointer;
+}
+
 h1 {
   color: #513E5E;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+h1 > span.jungleGreen {
+  font-weight: normal;
+}
+
+h5, h4, h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 a {
   color: inherit;
+}
+
+a:hover {
+  color: #513E5E;
+  text-decoration: none;
 }
 
 [id*="section"] {
@@ -104,6 +139,13 @@ a {
 header {
   background-image: url('../img/jumbo-overlay.svg');
   background-color: #F0EFEF;
+  background-size: 100% 60%;
+  background-repeat: no-repeat;
+  transform: rotateX(180deg);
+}
+
+header > .container {
+  transform: rotateX(-180deg);
 }
 
 nav .row {
@@ -131,11 +173,48 @@ nav .menu {
 
 .menu > ul > li {
   list-style: none;
-  padding: 0 5px;
+  padding: 10px 5px;
+  margin: 0 10px;
+}
+
+.menu > ul > li:hover {
+  background-color: #E5E4E4;
 }
 
 .menu > * {
-  margin: 0 20px;
+  margin: 0 10px;
+}
+
+.menu .my_small {
+  font-size: 0.5rem;
+}
+
+nav .menu .cart {
+  position: relative;
+}
+
+nav .menu .cart .cart-counter {
+  background-color: #22AD96;
+  color: #FFF;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  font-size: 7px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: -5px;
+}
+
+nav .menu .searchbar {
+  background-color: #FFF;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+nav .menu .searchbar input {
+  border: none;
 }
 
 .jumbotron {
@@ -188,23 +267,29 @@ nav .menu {
   background-repeat: no-repeat;
   background-position: left;
   background-size: 60%;
+  height: 550px;
 }
 
 #section2 .box {
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 15px 15px 15px #F0EFEF;
+  box-shadow: 25px 25px 25px #F0EFEF;
   margin-bottom: 30px;
 }
 
 #section2 .title {
-  background-color: #22AD96;
+  background-color: #FFF;
   display: flex;
   justify-content: space-between;
   padding: 10px;
 }
 
-#section2 .title img {
+#section2 .title.active {
+  background-color: #22AD96;
+  color: #FFF;
+}
+
+#section2 .title img.more {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -212,7 +297,16 @@ nav .menu {
   background-color: #959999;
 }
 
-#section2 .title img:hover {
+#section2 .title .less {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  background-color: #FFF;
+  color: #22AD96;
+}
+
+#section2 .title:hover {
   cursor: pointer;
 }
 
@@ -222,7 +316,6 @@ nav .menu {
 
 #section2 .box > p {
   padding: 15px 10px;
-  display: none;
 }
 
 /* section 3 */
@@ -259,6 +352,7 @@ margin-bottom: 50px;
 #section4 .course:hover {
   background-color: #FFF;
   box-shadow: 15px 15px 15px #F0EFEF;
+  cursor: pointer;
 }
 
 #section4 .course .courseImg {
@@ -383,8 +477,8 @@ margin-bottom: 50px;
 
 #section7 .event {
   flex-basis: 45%;
-  margin: 15px 15px;
-  padding: 20px;
+  margin: 15px;
+  padding: 15px 25px;
   background-color: #F0EFEF;
   border-radius: 5px;
 }
@@ -393,6 +487,7 @@ margin-bottom: 50px;
   background-color: #FFF;
   box-shadow: 15px 15px 15px #F0EFEF;
   border-left: 5px solid #22AD96;
+  cursor: pointer;
 }
 
 #section7 .event:hover .btn-primary {
@@ -413,13 +508,23 @@ margin-bottom: 50px;
   justify-content: space-between;
 }
 
+#section7 .event-right button {
+  margin: 5px 0;
+}
+
 #section7 .eventDay {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 #section7 .eventMonth {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+#section7 .bottom-section {
+  margin-top: 30px;
 }
 
 #section7 a {
@@ -503,7 +608,7 @@ footer .left-footer > * {
   margin-bottom: 10px;
 }
 
-footer .social > i {
+footer .social  i {
   margin-top: 15px;
   margin-right: 15px;
 }
@@ -515,6 +620,10 @@ footer .menu-title {
 footer ul {
   list-style: none;
   padding: 0;
+}
+
+footer ul > li {
+  margin-bottom: 0.5rem;
 }
 
 footer .copy {

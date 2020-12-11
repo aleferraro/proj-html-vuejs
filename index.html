@@ -30,6 +30,9 @@
   </head>
   <body class="">
     <div id="root">
+      <div @click="backToTop" class="toTop">
+        <i class="fas fa-long-arrow-alt-up"></i>
+      </div>
       <header class="container-fluid">
         <div class="container">
           <nav class="mulledWine">
@@ -42,12 +45,13 @@
                   <li v-for="item in navMenu">
                     <a href="#">
                       {{ item }}
-                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-chevron-down my_small"></i>
                     </a>
                   </li>
                 </ul>
-                <a href="#">
+                <a class="cart" href="#">
                   <i class="fas fa-shopping-cart"></i>
+                  <span class="cart-counter">0</span>
                 </a>
                 <a href="#">
                   <i class="far fa-user-circle"></i>
@@ -88,7 +92,7 @@
             <div class="cardContainer">
               <div v-for="card in sectionOneCards" class="text-center card">
                 <img :src="card.imgUrl" :alt="'image for' + card.title">
-                <h4 class="text-capitalize mulledWine">{{ card.title }}</h4>
+                <h5 class="text-capitalize mulledWine">{{ card.title }}</h5>
                 <p>{{ card.text }}</p>
                 <button type="button" class="btn btn-secondary">Start now <i class="fas fa-long-arrow-alt-right"></i></button>
               </div>
@@ -108,11 +112,12 @@
                 </h6>
                 <h1 class="text-capitalize">construct a <span class="jungleGreen">stunning</span> career perspective</h1>
                 <div v-for="item in sectionTwoCards" class="box">
-                  <div class="title mulledWine">
+                  <div @click="showBox(item)" class="title mulledWine" :class="{active: item.active}">
                     <h6>{{ item.title }}</h6>
-                    <img src="img/add.svg" alt="show more">
+                    <span v-if="item.active" class="less text-center">-</span>
+                    <img v-else class="more" src="img/add.svg" alt="show more">
                   </div>
-                  <p>{{ item.text }}</p>
+                  <p v-if="item.active">{{ item.text }}</p>
                 </div>
               </div>
             </div>
@@ -254,7 +259,7 @@
                       <i class="fas fa-map-marker-alt"></i>
                       {{ event.position }}
                     </span>
-                    <h4 class="eventName mulledWine">{{ event.eventName }}</h4>
+                    <h5 class="eventName mulledWine">{{ event.eventName }}</h5>
                   </div>
                   <div class="col-4 text-center event-right">
                     <span class="jungleGreen eventDay">{{ event.eventDay }}</span>
@@ -266,7 +271,7 @@
                 </div>
               </div>
             </div>
-            <div class="text-center">
+            <div class="text-center bottom-section">
               <p>
                 Excited about our event?
                 <a href="#" class="jungleGreen">View all events <i class="fas fa-long-arrow-alt-right"></i></a>
@@ -316,10 +321,10 @@
               <div>+1(305) 547-9909 (9am - 5pm EST, Monday - Friday)</div>
               <a href="#">support@maxcoach.com</a>
               <div class="social">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-linkedin"></i>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
               </div>
             </div>
             <div class="col">
