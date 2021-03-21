@@ -191,7 +191,6 @@ const myApp = new Vue({
         ]
       }
     ],
-    isActiveBox: false
   },
   methods: {
     showBox(e){
